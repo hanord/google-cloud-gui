@@ -1,0 +1,7 @@
+FROM node:10.15.0-alpine
+
+RUN yarn global add google-cloud-gui
+
+ENTRYPOINT ["google-cloud-gui", "--skip-browser"]
+
+EXPOSE 8000
